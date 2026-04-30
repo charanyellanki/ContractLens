@@ -1,3 +1,16 @@
+---
+title: ContractLens
+emoji: ⚖️
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.40.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Legal contract clause extraction via LangGraph + LLM-as-judge
+---
+
 # ContractLens
 
 > Evaluation-first contract clause extraction system on the CUAD dataset

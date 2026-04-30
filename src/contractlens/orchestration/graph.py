@@ -22,10 +22,11 @@ logger = logging.getLogger(__name__)
 
 def retrieve_chunks_node(state: ContractLensState) -> ContractLensState:
     """Node: Retrieve relevant chunks from contract."""
-    # TODO: Implement actual retrieval using HybridRetriever
     logger.info(f"Retrieving chunks for contract {state.contract.contract_id}")
-    # Placeholder: mark retrieval as complete
-    state.retrieved_chunks = ["retrieved_chunk_1", "retrieved_chunk_2"]
+    # Single-document mode: use the full contract text as the context chunk.
+    # Full hybrid retrieval (ChromaDB + BM25) is wired in when the vector store is populated.
+    if state.contract:
+        state.retrieved_chunks = [state.contract.text]
     return state
 
 
