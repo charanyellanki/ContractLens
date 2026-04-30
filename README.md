@@ -8,7 +8,7 @@ sdk_version: 1.40.0
 app_file: app.py
 pinned: false
 license: mit
-short_description: Legal contract clause extraction via LangGraph + LLM-as-judge
+short_description: Legal clause extraction with LLM-as-judge
 ---
 
 # ContractLens
